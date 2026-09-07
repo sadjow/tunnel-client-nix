@@ -2,8 +2,6 @@
 
 Nix packages for [OpenAI Secure MCP Tunnel](https://github.com/openai/tunnel-client), with hourly stable-release checks and native builds on Linux and macOS.
 
-This is independent packaging maintained by Sadjow, following [claude-code-nix](https://github.com/sadjow/claude-code-nix) and [codex-cli-nix](https://github.com/sadjow/codex-cli-nix). It is not an official OpenAI project.
-
 ## Features
 
 - Official release binaries, pinned by SHA-256 and checked against upstream checksums.
