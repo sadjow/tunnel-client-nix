@@ -104,9 +104,24 @@ nix flake update tunnel-client-nix
 
 ## Binary cache
 
-CI supports Cachix through the `CACHIX_CACHE` repository variable and the `CACHIX_AUTH_TOKEN` secret. Without these, packages build directly from the upstream archives; no Go compilation is required. Cache publishing is limited to validated main commits.
+The public cache is [tunnel-client.cachix.org](https://tunnel-client.cachix.org). Enable it with:
 
-See [repository setup](.github/REPOSITORY_SETTINGS.md) for enabling publishing. Users can enable the chosen cache with `cachix use <cache-name>` in their own configuration.
+```sh
+cachix use tunnel-client
+```
+
+For declarative NixOS or nix-darwin configuration:
+
+```nix
+nix.settings = {
+  extra-substituters = [ "https://tunnel-client.cachix.org" ];
+  extra-trusted-public-keys = [
+    "tunnel-client.cachix.org-1:m5ve4z3WgkbTn0GwDRbBCG76dJBlTjv9TR93sO3AaqA="
+  ];
+};
+```
+
+CI publishing requires the `CACHIX_CACHE` repository variable and the `CACHIX_AUTH_TOKEN` secret. Without a cached output, packages build directly from upstream archives; no Go compilation is required. Cache publishing is limited to validated main commits. See [repository setup](.github/REPOSITORY_SETTINGS.md) for enabling publishing.
 
 ## Development and updates
 
