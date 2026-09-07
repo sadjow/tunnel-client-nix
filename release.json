@@ -1,0 +1,23 @@
+{
+  "version": "0.0.14",
+  "hashes": {
+    "tunnel-client": {
+      "darwin-arm64": "sha256-tUBJPFvbzbt1VwDI4uFll+KLFWnkJQB+D3MREEe9amQ=",
+      "linux-arm64": "sha256-LeP7h5oY7bhH4DE1kskS8Zg2hUiCkKf9unrEA+ak+wo=",
+      "darwin-amd64": "sha256-deEL53QYT7QhieNHsW62vJ+weAE12K9xTTTjDOBo3FM=",
+      "linux-amd64": "sha256-Fb0X6AXK051BIZkRW7nhCpeN01JYoRTN8l3SrmaBx9M="
+    },
+    "tunnel-client-runtime": {
+      "darwin-arm64": "sha256-3Q97T1yzXcuFx3gU7RE6vwX5/NxpxznTH6z3QyWxEtI=",
+      "linux-arm64": "sha256-ekpqTrmVwXWqAkNDT/ea6eTCZ10cJeDZg2IsSAmBWfs=",
+      "darwin-amd64": "sha256-WBxZRjL5B9JQkB6GkCWlBKLQMcyiURMyht/OJi/D6CE=",
+      "linux-amd64": "sha256-KdKc+GCtpU5NPILHFfT7/P8qvNwlhMD8JkMTCN+iUFs="
+    },
+    "tunnel-client-runtime-cloudflared": {
+      "darwin-arm64": "sha256-xSvZX4AYt7KQO+u0WkehaVssbhRrBnLisRw4RhznKcE=",
+      "linux-arm64": "sha256-CBUVYtUgW8Rm2TeDREfwAgRihUBUgP+7T3W5ekm1jgA=",
+      "darwin-amd64": "sha256-ntzwvuvyV6dlwyFG2Qb/Kr6aKhEBPiInJ1k9hj8UFPo=",
+      "linux-amd64": "sha256-5S/zcsD7ibGC8vO+5Pj4yTw8zonkljWdEAD81Mk+rjs="
+    }
+  }
+}

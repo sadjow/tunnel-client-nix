@@ -1,0 +1,112 @@
+name: Check for Updates
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Stable upstream version (leave empty for latest)
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-release
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      changed: ${{ steps.update.outputs.changed }}
+      sha: ${{ steps.pr.outputs.sha }}
+      base: ${{ steps.pr.outputs.base }}
+      number: ${{ steps.pr.outputs.number }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            access-tokens = github.com=${{ github.token }}
+      - id: update
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_VERSION: ${{ inputs.version }}
+        run: |
+          args=()
+          if [[ -n "$REQUESTED_VERSION" ]]; then args+=(--version "$REQUESTED_VERSION"); fi
+          python3 scripts/update.py "${args[@]}"
+          if git diff --quiet -- release.json; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Prepare update pull request
+        id: pr
+        if: steps.update.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(jq -r .version release.json)
+          echo "base=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c automation/update
+          git add release.json
+          git commit -m "chore: update tunnel-client to $version"
+          git push --force-with-lease origin HEAD:refs/heads/automation/update
+          title="chore: update tunnel-client to $version"
+          body="$RUNNER_TEMP/update-body.md"
+          cat > "$body" <<EOF
+          Updates every package variant to OpenAI tunnel-client $version. All archive hashes were verified against the upstream release checksums.
+
+          The update workflow builds and smoke-tests this exact commit on all four platforms before merging.
+
+          Upstream release: https://github.com/openai/tunnel-client/releases/tag/v$version
+          EOF
+          number=$(gh pr list --head automation/update --base main --state open --json number --jq '.[0].number // empty')
+          if [[ -z "$number" ]]; then
+            gh pr create --base main --head automation/update --title "$title" --body-file "$body"
+            number=$(gh pr list --head automation/update --base main --state open --json number --jq '.[0].number')
+          else
+            gh pr edit "$number" --title "$title" --body-file "$body"
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+  validate:
+    needs: prepare
+    if: needs.prepare.outputs.changed == 'true'
+    uses: ./.github/workflows/validate.yml
+    with:
+      ref: ${{ needs.prepare.outputs.sha }}
+
+  merge:
+    needs: [prepare, validate]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Merge the tested update and schedule caching
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TESTED_SHA: ${{ needs.prepare.outputs.sha }}
+          BASE_SHA: ${{ needs.prepare.outputs.base }}
+          PR_NUMBER: ${{ needs.prepare.outputs.number }}
+        run: |
+          current_base=$(gh api "repos/$GH_REPO/git/ref/heads/main" --jq .object.sha)
+          test "$current_base" = "$BASE_SHA"
+          gh pr merge "$PR_NUMBER" --squash --delete-branch --match-head-commit "$TESTED_SHA"
+          gh workflow run build.yml --ref main

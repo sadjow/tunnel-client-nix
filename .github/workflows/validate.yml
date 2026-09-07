@@ -1,0 +1,54 @@
+name: Validate packages
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  matrix:
+    runs-on: ubuntu-24.04
+    outputs:
+      platforms: ${{ steps.platforms.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ inputs.ref }}
+          persist-credentials: false
+      - id: platforms
+        run: |
+          echo "matrix=$(jq -c '{include: [to_entries[] | {system: .key, runner: .value.runner}]}' platforms.json)" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: matrix
+    name: Build (${{ matrix.system }})
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.matrix.outputs.platforms) }}
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ inputs.ref }}
+          persist-credentials: false
+      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            access-tokens = github.com=${{ github.token }}
+      - name: Verify native platform
+        env:
+          EXPECTED_SYSTEM: ${{ matrix.system }}
+        run: test "$(nix eval --impure --raw --expr builtins.currentSystem)" = "$EXPECTED_SYSTEM"
+      - name: Check formatting and workflows
+        if: matrix.system == 'x86_64-linux'
+        run: |
+          nix fmt -- --check *.nix
+          nix develop --command actionlint
+      - name: Build and test every variant
+        run: nix flake check --print-build-logs

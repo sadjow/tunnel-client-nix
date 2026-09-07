@@ -1,0 +1,5 @@
+{
+  "tunnel-client": { "cloudflared": true, "completions": true },
+  "tunnel-client-runtime": { "cloudflared": false, "completions": false },
+  "tunnel-client-runtime-cloudflared": { "cloudflared": true, "completions": false }
+}
