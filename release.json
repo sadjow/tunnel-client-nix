@@ -1,23 +1,23 @@
 {
-  "version": "0.0.14",
+  "version": "0.0.15",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-tUBJPFvbzbt1VwDI4uFll+KLFWnkJQB+D3MREEe9amQ=",
-      "linux-arm64": "sha256-LeP7h5oY7bhH4DE1kskS8Zg2hUiCkKf9unrEA+ak+wo=",
-      "darwin-amd64": "sha256-deEL53QYT7QhieNHsW62vJ+weAE12K9xTTTjDOBo3FM=",
-      "linux-amd64": "sha256-Fb0X6AXK051BIZkRW7nhCpeN01JYoRTN8l3SrmaBx9M="
+      "darwin-arm64": "sha256-ssrjqp30W0wv6bHXAOuszjn5/ramtGuG5kmfmlG/cv8=",
+      "linux-arm64": "sha256-xRv9iD/CLjRFSUoDwBeYdRdlZL3kcGYbMI/YOvXQGrs=",
+      "darwin-amd64": "sha256-ncrh4vsSEofnMnHtt7hT3aUqqGt7/KHfkbwnU3EmG9s=",
+      "linux-amd64": "sha256-jINtxdaNaLZj2aXFso/5+ngNn3o//7HDBogLjzL6tfE="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-3Q97T1yzXcuFx3gU7RE6vwX5/NxpxznTH6z3QyWxEtI=",
-      "linux-arm64": "sha256-ekpqTrmVwXWqAkNDT/ea6eTCZ10cJeDZg2IsSAmBWfs=",
-      "darwin-amd64": "sha256-WBxZRjL5B9JQkB6GkCWlBKLQMcyiURMyht/OJi/D6CE=",
-      "linux-amd64": "sha256-KdKc+GCtpU5NPILHFfT7/P8qvNwlhMD8JkMTCN+iUFs="
+      "darwin-arm64": "sha256-5BbqnqE+G4vg0KNV+9KBQ8+lX+WjKymG/OGlFte14q0=",
+      "linux-arm64": "sha256-qGjSlThbIkSTQfoUG5EfPpkVg+RbH6Klv7lGrtGGG4g=",
+      "darwin-amd64": "sha256-LTorOpha0vz93EqCoMqmYk7pOD59heglY78f486QV5Q=",
+      "linux-amd64": "sha256-8m+LPubDNeOPpc++bOVjX1NzjwiibuzwfWzrrKtKGr8="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-xSvZX4AYt7KQO+u0WkehaVssbhRrBnLisRw4RhznKcE=",
-      "linux-arm64": "sha256-CBUVYtUgW8Rm2TeDREfwAgRihUBUgP+7T3W5ekm1jgA=",
-      "darwin-amd64": "sha256-ntzwvuvyV6dlwyFG2Qb/Kr6aKhEBPiInJ1k9hj8UFPo=",
-      "linux-amd64": "sha256-5S/zcsD7ibGC8vO+5Pj4yTw8zonkljWdEAD81Mk+rjs="
+      "darwin-arm64": "sha256-cldjKo+4aFpVYdHAPoaLFTVDxRu8OMDTr0B04KpGsZc=",
+      "linux-arm64": "sha256-wrbgfOz5PsOMXRR9O015Bj0JYz0iyx1CmUn/C9oWD9E=",
+      "darwin-amd64": "sha256-CeZHJx0gtJZVOkWm7lP84ir+0Kp0NLSx40wPiXwtaLQ=",
+      "linux-amd64": "sha256-1JGBoaMBUgrHWJFspZxXYKksC0f3Tq6uHNx/7yyIKU0="
     }
   }
 }
