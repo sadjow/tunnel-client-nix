@@ -1,23 +1,23 @@
 {
-  "version": "0.0.15",
+  "version": "0.0.16",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-ssrjqp30W0wv6bHXAOuszjn5/ramtGuG5kmfmlG/cv8=",
-      "linux-arm64": "sha256-xRv9iD/CLjRFSUoDwBeYdRdlZL3kcGYbMI/YOvXQGrs=",
-      "darwin-amd64": "sha256-ncrh4vsSEofnMnHtt7hT3aUqqGt7/KHfkbwnU3EmG9s=",
-      "linux-amd64": "sha256-jINtxdaNaLZj2aXFso/5+ngNn3o//7HDBogLjzL6tfE="
+      "darwin-arm64": "sha256-oWCCDUUIm1JT2NZx/ipom94Pc9eME10Ul6ezPyijrGI=",
+      "linux-arm64": "sha256-lj0DhKqnx5h3hHnEVnP5BRpAOd2JGu+PiXjSoaYot08=",
+      "darwin-amd64": "sha256-V7Pdc/LQQseutWZGgfdTgHg1n1VTi54EhkDx33GgyD8=",
+      "linux-amd64": "sha256-1gzboBm85FG8w6FUeMxbnLEScLBJ9bVuo5qAtRf4sRc="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-5BbqnqE+G4vg0KNV+9KBQ8+lX+WjKymG/OGlFte14q0=",
-      "linux-arm64": "sha256-qGjSlThbIkSTQfoUG5EfPpkVg+RbH6Klv7lGrtGGG4g=",
-      "darwin-amd64": "sha256-LTorOpha0vz93EqCoMqmYk7pOD59heglY78f486QV5Q=",
-      "linux-amd64": "sha256-8m+LPubDNeOPpc++bOVjX1NzjwiibuzwfWzrrKtKGr8="
+      "darwin-arm64": "sha256-gdIwoomuGxQWc42BULyHnYiinodJu2WQR6fvkN/ErL4=",
+      "linux-arm64": "sha256-7DvEgV4bn3oHc7JN5F9khB2a6+FwpYtidC4/HO9KwIg=",
+      "darwin-amd64": "sha256-v9SmOlI++eWFu8cdHACNCZ+3Vg/EGdPbsk22+I08lO4=",
+      "linux-amd64": "sha256-+PSAF+dSgQwsbwIGXNxMoa0EW5Gm0EXLqxRLlX/cvbE="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-cldjKo+4aFpVYdHAPoaLFTVDxRu8OMDTr0B04KpGsZc=",
-      "linux-arm64": "sha256-wrbgfOz5PsOMXRR9O015Bj0JYz0iyx1CmUn/C9oWD9E=",
-      "darwin-amd64": "sha256-CeZHJx0gtJZVOkWm7lP84ir+0Kp0NLSx40wPiXwtaLQ=",
-      "linux-amd64": "sha256-1JGBoaMBUgrHWJFspZxXYKksC0f3Tq6uHNx/7yyIKU0="
+      "darwin-arm64": "sha256-QUrn6SB+Ydwf9q+XIZ5MimmM0lwCA9K+fLc1hlTkOwA=",
+      "linux-arm64": "sha256-JQ/qgxxMqG7wJ6CO2ArRc4qf/tVy+7/6lblbmvE9VVo=",
+      "darwin-amd64": "sha256-bNh1H107sN4jpBg0e34mJih7A8tkZXpShDtbsVMz3G0=",
+      "linux-amd64": "sha256-JYOPcVqlKaDl/gnehYZgJi056+EVfMrqb0JZEcjdiy0="
     }
   }
 }
