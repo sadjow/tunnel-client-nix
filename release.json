@@ -1,23 +1,23 @@
 {
-  "version": "0.0.17",
+  "version": "0.0.18",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-3wOtC6nJXCKVG6toM98olGnxW5o/oDl9lePVaNH/bB8=",
-      "linux-arm64": "sha256-9QYNC2NmMmiqs8oxDLYRD6FIZ5gdsrBlf2ediDai2qA=",
-      "darwin-amd64": "sha256-HVTMV+CmJNxzPUAvfTZYXyE1oj3cMsTLUqclPH2NlKA=",
-      "linux-amd64": "sha256-vWpXxsBRFkQmfK+t0T/9tT7ODXU+C4iFf5V+eKj7x5M="
+      "darwin-arm64": "sha256-unoJlPfdFbyHCKoWAuz1Q3GkkjGaZBq5wz3ADx/Va/4=",
+      "linux-arm64": "sha256-pfPXDvx19eZqtcZ8RNJyqoCyc2+T+HXxZRQFF3UOwDU=",
+      "darwin-amd64": "sha256-lVlcZTiz+YcsE2dZKu3iLg0Y6n9r3VHNF/4L9+XKiyY=",
+      "linux-amd64": "sha256-PIIwcxas2TyIo4S2KvHYHT9MsO+pdfnAv675IoZqBMQ="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-zQuvcAlxK3Pd05Eft6L8iqEROoeAMODKXEYzijS/SE8=",
-      "linux-arm64": "sha256-p7wGi/XNW18lu/Qb1uKlImgxV8DVoHyCxqBB4QZyHAs=",
-      "darwin-amd64": "sha256-/GWZ7yvAaY6dzL7MUVoaA9Yh0Qs8TE5CXpBoJ8V5Qyg=",
-      "linux-amd64": "sha256-COb5o2viAmhHJWxoLzWT+Lfk7bquWTGpQcBYZCsiYYY="
+      "darwin-arm64": "sha256-gVbXgTWtNK5Fz1DDWjvI7hukycG5BbmO0CMsRKxWx+w=",
+      "linux-arm64": "sha256-LfhMDAHoBhq2XD0FeIOYSLUtXkvld2mdF04QcluBFms=",
+      "darwin-amd64": "sha256-6q4O2F+wr3D/dDqO5A6XvEK4ByDUVAZqLy8b0c6amDE=",
+      "linux-amd64": "sha256-RYrMnUWrUy5oGPObz+6jI3SlEfOSd8nfKhhH6qvX98s="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-omYVIK/vHcejCpHU3nakEhieB88rRakRe0he1gO1OkM=",
-      "linux-arm64": "sha256-Ldakzbl3uezGSfun5YGNEgeAsNtXs87eeFx1FBD1+AU=",
-      "darwin-amd64": "sha256-U31rWrxrg1fM6RZf2MH552DTtwZEC4EEmRKuATsVzEM=",
-      "linux-amd64": "sha256-2hW8uCm2vMV9bVCX/YGF/3E+F7Fhq7BRzLyymouGQG8="
+      "darwin-arm64": "sha256-1PFlcS6VmTIhkbigwsfzuR6r+gFP5lIO9qDklwl4I3E=",
+      "linux-arm64": "sha256-eYhm8bxYRsr3jAr22gdfrjaFHnU5Z32h9Kre9qmq5O0=",
+      "darwin-amd64": "sha256-QAo7UZmDgZbtpqCdIwbLKK05T+WidoN0Lqo5K0OJa4c=",
+      "linux-amd64": "sha256-ad8CWo0IIvTkmxhvwijtL7enYjwuBI+zp1i9zS+sNt8="
     }
   }
 }
