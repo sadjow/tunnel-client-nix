@@ -1,23 +1,23 @@
 {
-  "version": "0.0.18",
+  "version": "0.0.19",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-unoJlPfdFbyHCKoWAuz1Q3GkkjGaZBq5wz3ADx/Va/4=",
-      "linux-arm64": "sha256-pfPXDvx19eZqtcZ8RNJyqoCyc2+T+HXxZRQFF3UOwDU=",
-      "darwin-amd64": "sha256-lVlcZTiz+YcsE2dZKu3iLg0Y6n9r3VHNF/4L9+XKiyY=",
-      "linux-amd64": "sha256-PIIwcxas2TyIo4S2KvHYHT9MsO+pdfnAv675IoZqBMQ="
+      "darwin-arm64": "sha256-IkPQJLd6+O5LSrehRHlJ5fyNgrzS1RsXiSfy2p5H7P0=",
+      "linux-arm64": "sha256-WhnlVsSoc2q3pv3m8FaPbnQR+i3/IRhvwVvDDpuYpgM=",
+      "darwin-amd64": "sha256-3/l2dMd8rFnmqz2QHmz/UPsXpXhMAdiVnR9K2zr99L8=",
+      "linux-amd64": "sha256-nulEhZI0Wp3RUX+3l5GrVNJPBRFC65K8vozTVe/8kUI="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-gVbXgTWtNK5Fz1DDWjvI7hukycG5BbmO0CMsRKxWx+w=",
-      "linux-arm64": "sha256-LfhMDAHoBhq2XD0FeIOYSLUtXkvld2mdF04QcluBFms=",
-      "darwin-amd64": "sha256-6q4O2F+wr3D/dDqO5A6XvEK4ByDUVAZqLy8b0c6amDE=",
-      "linux-amd64": "sha256-RYrMnUWrUy5oGPObz+6jI3SlEfOSd8nfKhhH6qvX98s="
+      "darwin-arm64": "sha256-IldgWEVjoa1u5yWFvAAbrjSnFB1zJGoRfO7ShAkFkMw=",
+      "linux-arm64": "sha256-7dAWZ9Rrzr+ojdF9kr21YVhnaKfeNBC4s8g5e1J/1uk=",
+      "darwin-amd64": "sha256-4Z5S+S4091AtuH5U5qH1Qp4YKMoctaghsF3FY+Vv4vQ=",
+      "linux-amd64": "sha256-pDvq5vCFBaG2dRBX0CeXuqcKiO9/nrXf0DpVtrKRFq0="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-1PFlcS6VmTIhkbigwsfzuR6r+gFP5lIO9qDklwl4I3E=",
-      "linux-arm64": "sha256-eYhm8bxYRsr3jAr22gdfrjaFHnU5Z32h9Kre9qmq5O0=",
-      "darwin-amd64": "sha256-QAo7UZmDgZbtpqCdIwbLKK05T+WidoN0Lqo5K0OJa4c=",
-      "linux-amd64": "sha256-ad8CWo0IIvTkmxhvwijtL7enYjwuBI+zp1i9zS+sNt8="
+      "darwin-arm64": "sha256-bbdvQMJP9lvEKjFAWnuVDJjy61QMscIGkc7irTCvJxI=",
+      "linux-arm64": "sha256-wxglTN3MC4+3WWRzuvgS6X2cOL9zG0S2AquG4qvRZaY=",
+      "darwin-amd64": "sha256-/na79IY2omeiO9JZ5ynRkVkjgjzmqJoDATYhp2EJPPs=",
+      "linux-amd64": "sha256-0mVb/qLJ/q1wunubaXtXN73CQL3f9UxT8NqdEapAOaM="
     }
   }
 }
