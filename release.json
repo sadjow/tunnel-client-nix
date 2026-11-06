@@ -1,23 +1,23 @@
 {
-  "version": "0.0.19",
+  "version": "0.0.20",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-IkPQJLd6+O5LSrehRHlJ5fyNgrzS1RsXiSfy2p5H7P0=",
-      "linux-arm64": "sha256-WhnlVsSoc2q3pv3m8FaPbnQR+i3/IRhvwVvDDpuYpgM=",
-      "darwin-amd64": "sha256-3/l2dMd8rFnmqz2QHmz/UPsXpXhMAdiVnR9K2zr99L8=",
-      "linux-amd64": "sha256-nulEhZI0Wp3RUX+3l5GrVNJPBRFC65K8vozTVe/8kUI="
+      "darwin-arm64": "sha256-9Giedag19p8bu5xZ3pxN67jpycu90nIaqTN4tLBI/TM=",
+      "linux-arm64": "sha256-LYmUbCMRHrkQ8b1OfFxL/t/XOsDcmCiu/DYpTP6uSR8=",
+      "darwin-amd64": "sha256-qJM6RywYQJ0Tf73s5wZz29I0RnVP6ojrnlZT0yRLk+s=",
+      "linux-amd64": "sha256-LwbOWhdCXHSoJ+cDhpKTbpc644jn7scoxA7+4ftfE50="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-IldgWEVjoa1u5yWFvAAbrjSnFB1zJGoRfO7ShAkFkMw=",
-      "linux-arm64": "sha256-7dAWZ9Rrzr+ojdF9kr21YVhnaKfeNBC4s8g5e1J/1uk=",
-      "darwin-amd64": "sha256-4Z5S+S4091AtuH5U5qH1Qp4YKMoctaghsF3FY+Vv4vQ=",
-      "linux-amd64": "sha256-pDvq5vCFBaG2dRBX0CeXuqcKiO9/nrXf0DpVtrKRFq0="
+      "darwin-arm64": "sha256-j7ain9d3uGejo3m/MmQVfev2HLX0h8B6DcrqHFtuZnA=",
+      "linux-arm64": "sha256-zd0wpcfVzSEsadW97sBgpFQgHZW/XEN/Cy6cPp+AQ0Q=",
+      "darwin-amd64": "sha256-VMKruT4z+gAS+6NNHTkGU2uTNrfwC15uu2uP53rEt6c=",
+      "linux-amd64": "sha256-BfTSEc5Bz7aanFINqq0YjID2HY5uLbIE4g7+pQ1HTTw="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-bbdvQMJP9lvEKjFAWnuVDJjy61QMscIGkc7irTCvJxI=",
-      "linux-arm64": "sha256-wxglTN3MC4+3WWRzuvgS6X2cOL9zG0S2AquG4qvRZaY=",
-      "darwin-amd64": "sha256-/na79IY2omeiO9JZ5ynRkVkjgjzmqJoDATYhp2EJPPs=",
-      "linux-amd64": "sha256-0mVb/qLJ/q1wunubaXtXN73CQL3f9UxT8NqdEapAOaM="
+      "darwin-arm64": "sha256-mLmP+ja25SnDVmPZIDXz3bVjFXcU7F+TcBDPy25GNj4=",
+      "linux-arm64": "sha256-yJWXrjF3V7d8E44bUBbTJLGWbqapAsZUWzIw9ehAGrQ=",
+      "darwin-amd64": "sha256-FJkA+N7XpuTKyvv1pYiP/LONHt1uUCCrVlgEv+gKj5w=",
+      "linux-amd64": "sha256-cExh3i2kkzEwfgPKBdzgvgN4zwy/fkXFeg/qWNrgcP4="
     }
   }
 }
