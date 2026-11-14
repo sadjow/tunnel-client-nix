@@ -1,23 +1,23 @@
 {
-  "version": "0.0.20",
+  "version": "0.0.21",
   "hashes": {
     "tunnel-client": {
-      "darwin-arm64": "sha256-9Giedag19p8bu5xZ3pxN67jpycu90nIaqTN4tLBI/TM=",
-      "linux-arm64": "sha256-LYmUbCMRHrkQ8b1OfFxL/t/XOsDcmCiu/DYpTP6uSR8=",
-      "darwin-amd64": "sha256-qJM6RywYQJ0Tf73s5wZz29I0RnVP6ojrnlZT0yRLk+s=",
-      "linux-amd64": "sha256-LwbOWhdCXHSoJ+cDhpKTbpc644jn7scoxA7+4ftfE50="
+      "darwin-arm64": "sha256-NTpTXSUT9Zn5/niXYG6JsySGEUU7MCA+vd+25i/U9Ys=",
+      "linux-arm64": "sha256-eKUgLgc3GZIIoMPo98EjgFY0VGsKWHuDMDuXO39WrKY=",
+      "darwin-amd64": "sha256-Sv9T+5AzdLgyhGV8Oc+UDny5z+v7ey64wuhdqUxYN3A=",
+      "linux-amd64": "sha256-npGlOeOuHENtSZ8hah11FLPIbMd3kDL0GyoFgh10sDo="
     },
     "tunnel-client-runtime": {
-      "darwin-arm64": "sha256-j7ain9d3uGejo3m/MmQVfev2HLX0h8B6DcrqHFtuZnA=",
-      "linux-arm64": "sha256-zd0wpcfVzSEsadW97sBgpFQgHZW/XEN/Cy6cPp+AQ0Q=",
-      "darwin-amd64": "sha256-VMKruT4z+gAS+6NNHTkGU2uTNrfwC15uu2uP53rEt6c=",
-      "linux-amd64": "sha256-BfTSEc5Bz7aanFINqq0YjID2HY5uLbIE4g7+pQ1HTTw="
+      "darwin-arm64": "sha256-+41VUjLtL5NWR+z7CgH9ggfw9amAqrRAB+uRe+t0gu0=",
+      "linux-arm64": "sha256-Fkt1fuDAOJUI5uF+EpsAgPdzPYsxCOC9HX/jHgEBb5c=",
+      "darwin-amd64": "sha256-jPHT9KvnmfrGEyybYnou1aayWHIbMJNZdIMH1X70H+w=",
+      "linux-amd64": "sha256-+lMYK3Zq6s62Uthq7ikcSNr3uQtdc1htujcPTBgBMl4="
     },
     "tunnel-client-runtime-cloudflared": {
-      "darwin-arm64": "sha256-mLmP+ja25SnDVmPZIDXz3bVjFXcU7F+TcBDPy25GNj4=",
-      "linux-arm64": "sha256-yJWXrjF3V7d8E44bUBbTJLGWbqapAsZUWzIw9ehAGrQ=",
-      "darwin-amd64": "sha256-FJkA+N7XpuTKyvv1pYiP/LONHt1uUCCrVlgEv+gKj5w=",
-      "linux-amd64": "sha256-cExh3i2kkzEwfgPKBdzgvgN4zwy/fkXFeg/qWNrgcP4="
+      "darwin-arm64": "sha256-4xJu2z889Ng3belqZ3FhyOV2A23RVNvXzE4xc5Ktw6o=",
+      "linux-arm64": "sha256-Llt4//p4SZMhsHEfzKoH4FBAkhXFamkcZ0uR9oll7ZM=",
+      "darwin-amd64": "sha256-BGwGYdBaiRaBooG8HrE6NnNx1Bt+LteTwW5Ovnr1Rcs=",
+      "linux-amd64": "sha256-Sue3xb++Lt6sCx9o61nMxNaZWj43j2b3TaogK9L1ypM="
     }
   }
 }
